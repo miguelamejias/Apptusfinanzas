@@ -38,7 +38,7 @@ export default {
         procesarGuardado: function(){
             let self = this
             
-            axios.post("http://127.0.0.1:8000/usuario/crear/", self.category, {headers: {}})
+            axios.post("https://cajero-api1993.herokuapp.com/usuario/crear/", self.category, {headers: {}})
                 .then((result)=>{
                     alert("Usuario Agregado")
                 })

@@ -28,7 +28,7 @@ export default {
     methods:{
         procesarConsulta: function(){
             let self = this
-            axios.get("http://127.0.0.1:8000/usuario/"+self.name)
+            axios.get("https://cajero-api1993.herokuapp.com/usuario/"+self.name)
                 .then((result)=>{
                     self.category.name = result.data.name
                     self.category.saldo = result.data.saldo
